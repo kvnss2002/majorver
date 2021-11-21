@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/majorver/static/css/main.eccaba37.chunk.css",
+    "main.js": "/majorver/static/js/main.0b6e6278.chunk.js",
+    "main.js.map": "/majorver/static/js/main.0b6e6278.chunk.js.map",
+    "runtime-main.js": "/majorver/static/js/runtime-main.f44cc2a4.js",
+    "runtime-main.js.map": "/majorver/static/js/runtime-main.f44cc2a4.js.map",
+    "static/css/2.4659568d.chunk.css": "/majorver/static/css/2.4659568d.chunk.css",
+    "static/js/2.6f10d1a3.chunk.js": "/majorver/static/js/2.6f10d1a3.chunk.js",
+    "static/js/2.6f10d1a3.chunk.js.map": "/majorver/static/js/2.6f10d1a3.chunk.js.map",
+    "static/js/3.4a42157a.chunk.js": "/majorver/static/js/3.4a42157a.chunk.js",
+    "static/js/3.4a42157a.chunk.js.map": "/majorver/static/js/3.4a42157a.chunk.js.map",
+    "index.html": "/majorver/index.html",
+    "static/css/2.4659568d.chunk.css.map": "/majorver/static/css/2.4659568d.chunk.css.map",
+    "static/css/main.eccaba37.chunk.css.map": "/majorver/static/css/main.eccaba37.chunk.css.map",
+    "static/js/2.6f10d1a3.chunk.js.LICENSE.txt": "/majorver/static/js/2.6f10d1a3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f44cc2a4.js",
+    "static/css/2.4659568d.chunk.css",
+    "static/js/2.6f10d1a3.chunk.js",
+    "static/css/main.eccaba37.chunk.css",
+    "static/js/main.0b6e6278.chunk.js"
+  ]
+}
