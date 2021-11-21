@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+.colors{
+  background-color: rgb(204, 126, 66);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.homeintro{
+  
+  background-color: lightgrey;
+  width: 100%;
+  border: 15px ;
+  padding: 10px;
+  margin: 20px;
+}
+.aboutdiv{
+  background-color: lightgrey;
+  width: 100%;
+  border: 15px ;
+  padding: 10px;
+  margin: 20px;
+  text-overflow: clip;
+}
+.chefs{
+  float: left;
+  padding: 10px;
+}
