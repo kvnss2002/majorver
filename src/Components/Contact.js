@@ -1,23 +1,75 @@
-import React, { Component } from 'react'
+import React ,{ useRef} from 'react'
 import './Contact.css'
-export default class Contact extends Component {
-    render() {
-        return (
-            <div>
-                <div class="container">
-		<div class="contact-box">
-			<div class="left"><img src="./images/reslogo.png" align="center"></img></div>
-			<div class="right">
-				<h2>Contact Us</h2>
-				<input type="text" class="field" placeholder="Your Name"></input>
-				<input type="text" class="field" placeholder="Your Email"></input>
-				<input type="text" class="field" placeholder="Phone"></input>
-				<textarea placeholder="Message" class="field"></textarea>
-				<button class="btn">Send</button>
-			</div>
-		</div>
-	</div>
-            </div>
-        )
-    }
+
+function Form() {
+
+
+  const firstNameRef = useRef(null)
+  const lastNameRef =  useRef(null)
+  const emailRef = useRef(null)
+  const messageRef =  useRef(null)
+
+  
+  const handleSubmit = (event) => {
+      event.preventDefault()
+      const data = {
+          firstName: firstNameRef.current.value,
+          lastName: lastNameRef.current.value,
+          email: emailRef.current.value,
+          message: messageRef.current.value
+      }
+      alert("YOUR DATA! \n" + JSON.stringify(data) + "CONFIRM THE MESSAGE!!")
+  }
+
+  return (
+      <div  className="container">
+          <h1>Contact us</h1>
+          <form onSubmit={handleSubmit} className="form">
+              <div className="name">
+                  <label for="firstName" id="nameLabel">First Name</label>
+                  <input
+                   
+                      type="text" 
+                      id="firstName" 
+                      name="firstName"
+                      className="firstName" 
+                      ref={firstNameRef} 
+                      tabindex="1" 
+                  />
+                  
+                  <label for="lastName">Last name</label>
+                  <input  
+                      type="text" 
+                      id="lastName" 
+                      className="lastName" 
+                      ref={lastNameRef}
+                      tabindex="2"  
+                  />
+              </div>
+              <label for="email">Email</label>
+              <input 
+              type="email" 
+              name="email"
+              id="email"
+              className="email"
+              placeholder="mailid"
+              ref={emailRef}
+              tabindex="3" 
+              />
+
+              <label for="message">Message</label>
+              <textarea 
+              placeholder="your message" 
+              className="message" 
+              name="message"
+              ref={messageRef}
+              >
+
+              </textarea>
+              <button type="submit" className="send">Send</button>
+          </form>
+      </div>
+  )
 }
+
+export default Form
